@@ -6,8 +6,10 @@ import { nanoid } from "nanoid";
 import s from "./ContactForm.module.css";
 
 const ContactForm = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (values, actions) => {
+    console.log(values);
+
+    // e.preventDefault();
   };
 
   return (
@@ -19,7 +21,7 @@ const ContactForm = () => {
           number: "",
         }}
       >
-        <Form onSubmit={handleSubmit} className={s.form}>
+        <Form className={s.form}>
           <label className={s.label}>
             <span>Name</span>
             <Field className={s.input} type="text" name="username" />

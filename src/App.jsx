@@ -7,12 +7,8 @@ import ContactList from "./components/ContactList/ContactList";
 
 import contactsData from "./data/contacts.json";
 
-// const MyComponent = () => {
-//   return (
-//     <div>
-//       <h1>Hello, JSX!</h1>
-//     </div>
-//   );
-// };
+const App = () => {
+  return <div>My App</div>;
+};
 
-// export default MyComponent;
+export default App;
